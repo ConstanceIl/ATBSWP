@@ -1,0 +1,33 @@
+# Method 1
+
+spam = ['apples', 'bananas', 'tofu', 'cats']
+another_list = []
+yet_another_list = ['stuff']
+
+def string(lista):
+    str1 = ''
+    
+    if len(lista) == 1:
+        return lista[0]
+    
+    elif len(lista) == 0:
+        return 'empty list'
+   
+    else:
+        for values in lista[:-2]:
+            str1 = str1 + values + ', '
+        str1 = str1 + lista[-2] + ' and ' + lista[-1]
+        return str1
+
+string(yet_another_list)
+
+
+# Method 2
+
+tests = [['apples', 'bananas', 'tofu', 'cats'], ['stuff'], []]
+
+def string(lista):
+    return '' if len(lista) == 0 else (lista[0] if len(lista) == 1 else ', '.join(lista[:-1]) + ', and ' + lista[-1])
+
+for test in tests:
+    print(string(test))
