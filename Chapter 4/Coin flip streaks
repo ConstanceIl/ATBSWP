@@ -1,0 +1,27 @@
+import random
+
+def coin():
+    luck = []
+    for trial in range(100):
+        heads_or_tails = random.randint(0, 1)
+        if heads_or_tails == 0:
+            luck.append('H')
+        else:
+            luck.append('T')
+    return luck   
+
+number_of_streaks = 0
+
+for experiment_number in range(10000):
+    luck = coin()
+    counter = 1
+    for i in range(99):
+        if luck[i] == luck[i + 1]:
+            counter += 1
+            if counter == 6:
+                number_of_streaks += 1
+                break
+        else:
+            counter = 1       
+print(number_of_streaks)
+print('Chance of streak: %s%%' % (number_of_streaks / 100))
