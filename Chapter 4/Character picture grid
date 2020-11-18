@@ -1,0 +1,67 @@
+# Method 1
+
+grid = [['.', '.', '.', '.', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['.', 'O', 'O', 'O', 'O', 'O'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['.', '.', '.', '.', '.', '.']]
+
+
+for i in range(len(grid[0])):
+    for j in range(len(grid)):
+        print(grid[j][i], end = '')
+    print()
+    
+    
+# Method 2
+
+grid = [['.', '.', '.', '.', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['.', 'O', 'O', 'O', 'O', 'O'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['.', '.', '.', '.', '.', '.']]
+   
+for a in range(len(grid[0])):
+    new_grid = ''
+    for b in range(len(grid)):
+        new_grid += grid[b][a]
+    print(new_grid)
+    
+    
+# Method 3
+
+grid = [['.', '.', '.', '.', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['.', 'O', 'O', 'O', 'O', 'O'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['.', '.', '.', '.', '.', '.']]
+
+grid0 = grid[0]
+grid1 = grid[1]
+grid2 = grid[2]
+grid3 = grid[3]
+grid4 = grid[4]
+grid5 = grid[5]
+grid6 = grid[6]
+grid7 = grid[7]
+grid8 = grid[8]
+
+print(grid0[0], grid1[0], grid2[0], grid3[0], grid4[0], grid5[0], grid6[0], grid7[0], grid8[0])
+print(grid0[1], grid1[1], grid2[1], grid3[1], grid4[1], grid5[1], grid6[1], grid7[1], grid8[1])
+print(grid0[2], grid1[2], grid2[2], grid3[2], grid4[2], grid5[2], grid6[2], grid7[2], grid8[2])
+print(grid0[3], grid1[3], grid2[3], grid3[3], grid4[3], grid5[3], grid6[3], grid7[3], grid8[3])
+print(grid0[4], grid1[4], grid2[4], grid3[4], grid4[4], grid5[4], grid6[4], grid7[4], grid8[4])
+print(grid0[5], grid1[5], grid2[5], grid3[5], grid4[5], grid5[5], grid6[5], grid7[5], grid8[5])
+    
